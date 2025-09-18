@@ -29,8 +29,4 @@ model.add(Dense(32, activation='relu'))
 # Add the output layer
 model.add(Dense(1))
 
-# Compile the model
-model.compile(optimizer='adam', loss='mean_squared_error')
-
-# Fit the model
-model.fit(predictors, target)
+model.summary()
